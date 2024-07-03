@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind</title>
+</head>
+<body>
+    <!--<h1 class="text-3xl text-red-600 font-bold underline ">
+        Hello world!
+      </h1>-->
+
+      <header class="w-full h-[80px] bg-indigo-600 flex justify-between items-center px-10 fixed ">
+            <p class="text-3xl font-bold text-zinc-50">LOGO</p>
+            <!-- Menu Desktop -->
+
+
+            <ul class="hidden sm:flex gap-5 text-zinc-50 font-semibold">
+                <li class="duration-700 hover:text-red-900 cursor-pointer">Home</li>
+                <li class="hover:text-red-900 cursor-pointer">Servicios</li>
+                <li class="duration-700 hover:text-red-900 cursor-pointer">Productos</li>
+                <li class="duration-700 hover:text-red-900 cursor-pointer">Resenas</li>
+                <li class="hover:text-red-900 cursor-pointer">Contacto</li>
+            </ul>
+
+             <!--  Menu Mobile -->
+             <input class="hidden peer/menu" type="checkbox" name="menu-mobile" id="menu-mobile">
+             <label for="menu-mobile" class="sm:hidden">
+                <img class="w-[40px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="btn-menu">
+             </label>
+
+             <aside class="fixed h-screen w-[250px] top-0 right-0 hidden sm:hidden peer-checked/menu:block bg-indigo-400">
+                <label class="text-2xl text-white" for="menu-mobile">
+                    X
+                </label>
+             </aside>
+      </header>
+      <main class="h-screen bg-gray-900 flex justify-center items-center">
+        <h1 class="text-zinc-50 text-5xl">MI TITULO</h1>
+      </main>
+      <section class="bg-gray-500 h-screen">
+
+      </section>
+</body>
+</html>
